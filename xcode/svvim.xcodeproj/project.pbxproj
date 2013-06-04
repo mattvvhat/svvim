@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		0097E3E50F3E9819005A4392 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0097E3E40F3E9819005A4392 /* QuickTime.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00BAE65A0E7ED9C10018A608 /* svvimApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00BAE6590E7ED9C10018A608 /* svvimApp.cpp */; };
+		00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00CCAF14116A9FEE008396D5 /* CinderApp.icns */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C95697BE1717A71A003D9E39 /* distortion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95697BC1717A71A003D9E39 /* distortion.cpp */; };
+		C95697C11717B759003D9E39 /* water-over.m4v in Resources */ = {isa = PBXBuildFile; fileRef = C95697BF1717B759003D9E39 /* water-over.m4v */; };
+		C95697C21717B759003D9E39 /* water-under.m4v in Resources */ = {isa = PBXBuildFile; fileRef = C95697C01717B759003D9E39 /* water-under.m4v */; };
+		C98962711738C51B00AD53C8 /* yea.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C98962701738C51B00AD53C8 /* yea.glsl */; };
+		C98962731738CBB800AD53C8 /* swim-bw-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C98962721738CBB800AD53C8 /* swim-bw-logo.png */; };
+		C98962751739474800AD53C8 /* swim-bw-logo-2.png in Resources */ = {isa = PBXBuildFile; fileRef = C98962741739474700AD53C8 /* swim-bw-logo-2.png */; };
+		C98A5ED4171BC8790024F9FF /* nothing.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C98A5ED3171BC8790024F9FF /* nothing.glsl */; };
+		C98A5ED6171BC9810024F9FF /* pass-through.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C98A5ED5171BC9810024F9FF /* pass-through.glsl */; };
+		C99358AD1739AB80005638DE /* SVVIM4_VIS_04.mov in Resources */ = {isa = PBXBuildFile; fileRef = C99358AC1739AB80005638DE /* SVVIM4_VIS_04.mov */; };
+		C99358AF1739B695005638DE /* bgMarble.png in Resources */ = {isa = PBXBuildFile; fileRef = C99358AE1739B695005638DE /* bgMarble.png */; };
+		C99358B11739C777005638DE /* swim-bw-logo-3.png in Resources */ = {isa = PBXBuildFile; fileRef = C99358B01739C777005638DE /* swim-bw-logo-3.png */; };
+		C99358B31739CFA5005638DE /* SVVIM4_VIS_07.mov in Resources */ = {isa = PBXBuildFile; fileRef = C99358B21739CFA5005638DE /* SVVIM4_VIS_07.mov */; };
+		C99358B51739CFDF005638DE /* SVVIM4_VIS_08.mov in Resources */ = {isa = PBXBuildFile; fileRef = C99358B41739CFDF005638DE /* SVVIM4_VIS_08.mov */; };
+		C99358B81739CFEC005638DE /* SVVIM4_VIS_10.mov in Resources */ = {isa = PBXBuildFile; fileRef = C99358B61739CFEC005638DE /* SVVIM4_VIS_10.mov */; };
+		C99358B91739CFEC005638DE /* SVVIM4_VIS_11.mov in Resources */ = {isa = PBXBuildFile; fileRef = C99358B71739CFEC005638DE /* SVVIM4_VIS_11.mov */; };
+		C9AB52C81723876500FF9BF4 /* movie-002.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52BF1723876500FF9BF4 /* movie-002.mov */; };
+		C9AB52C91723876500FF9BF4 /* movie-003.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C01723876500FF9BF4 /* movie-003.mov */; };
+		C9AB52CA1723876500FF9BF4 /* movie-004.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C11723876500FF9BF4 /* movie-004.mov */; };
+		C9AB52CB1723876500FF9BF4 /* movie-005.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C21723876500FF9BF4 /* movie-005.mov */; };
+		C9AB52CC1723876500FF9BF4 /* movie-006.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C31723876500FF9BF4 /* movie-006.mov */; };
+		C9AB52CD1723876500FF9BF4 /* movie-008.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C41723876500FF9BF4 /* movie-008.mov */; };
+		C9AB52CE1723876500FF9BF4 /* movie-009.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C51723876500FF9BF4 /* movie-009.mov */; };
+		C9AB52CF1723876500FF9BF4 /* movie-011.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52C61723876500FF9BF4 /* movie-011.mov */; };
+		C9AB52D1172389A800FF9BF4 /* movie-007.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52D0172389A800FF9BF4 /* movie-007.mov */; };
+		C9AB52D5172389B300FF9BF4 /* movie-010.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52D2172389B300FF9BF4 /* movie-010.mov */; };
+		C9AB52D6172389B300FF9BF4 /* movie-012.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52D3172389B300FF9BF4 /* movie-012.mov */; };
+		C9AB52D7172389B300FF9BF4 /* movie-013.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9AB52D4172389B300FF9BF4 /* movie-013.mov */; };
+		C9DAEAE9171C4EEC00C40C3A /* saturday-night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DAEAE8171C4EEC00C40C3A /* saturday-night.jpg */; };
+		C9E7E10F173989930041E9BD /* pulse.frag in Sources */ = {isa = PBXBuildFile; fileRef = C9E7E10E173989930041E9BD /* pulse.frag */; };
+		C9EB0EC41720E42300C91D97 /* svvimScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9EB0EC21720E42300C91D97 /* svvimScene.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		0097E3E40F3E9819005A4392 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00BAE6590E7ED9C10018A608 /* svvimApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = svvimApp.cpp; path = ../src/svvimApp.cpp; sourceTree = SOURCE_ROOT; };
+		00CCAF14116A9FEE008396D5 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CinderApp.icns; sourceTree = SOURCE_ROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* svvim_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svvim_Prefix.pch; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* svvim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = svvim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95697BC1717A71A003D9E39 /* distortion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = distortion.cpp; sourceTree = "<group>"; };
+		C95697BD1717A71A003D9E39 /* distortion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distortion.h; sourceTree = "<group>"; };
+		C95697BF1717B759003D9E39 /* water-over.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "water-over.m4v"; sourceTree = "<group>"; };
+		C95697C01717B759003D9E39 /* water-under.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "water-under.m4v"; sourceTree = "<group>"; };
+		C98962701738C51B00AD53C8 /* yea.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yea.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C98962721738CBB800AD53C8 /* swim-bw-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swim-bw-logo.png"; sourceTree = "<group>"; };
+		C98962741739474700AD53C8 /* swim-bw-logo-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swim-bw-logo-2.png"; sourceTree = "<group>"; };
+		C98A5ED3171BC8790024F9FF /* nothing.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nothing.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C98A5ED5171BC9810024F9FF /* pass-through.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pass-through.glsl"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C99358AC1739AB80005638DE /* SVVIM4_VIS_04.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SVVIM4_VIS_04.mov; sourceTree = "<group>"; };
+		C99358AE1739B695005638DE /* bgMarble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMarble.png; sourceTree = "<group>"; };
+		C99358B01739C777005638DE /* swim-bw-logo-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swim-bw-logo-3.png"; sourceTree = "<group>"; };
+		C99358B21739CFA5005638DE /* SVVIM4_VIS_07.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SVVIM4_VIS_07.mov; sourceTree = "<group>"; };
+		C99358B41739CFDF005638DE /* SVVIM4_VIS_08.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SVVIM4_VIS_08.mov; sourceTree = "<group>"; };
+		C99358B61739CFEC005638DE /* SVVIM4_VIS_10.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SVVIM4_VIS_10.mov; sourceTree = "<group>"; };
+		C99358B71739CFEC005638DE /* SVVIM4_VIS_11.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SVVIM4_VIS_11.mov; sourceTree = "<group>"; };
+		C9AB52BF1723876500FF9BF4 /* movie-002.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-002.mov"; path = "SVVag/movie-002.mov"; sourceTree = "<group>"; };
+		C9AB52C01723876500FF9BF4 /* movie-003.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-003.mov"; path = "SVVag/movie-003.mov"; sourceTree = "<group>"; };
+		C9AB52C11723876500FF9BF4 /* movie-004.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-004.mov"; path = "SVVag/movie-004.mov"; sourceTree = "<group>"; };
+		C9AB52C21723876500FF9BF4 /* movie-005.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-005.mov"; path = "SVVag/movie-005.mov"; sourceTree = "<group>"; };
+		C9AB52C31723876500FF9BF4 /* movie-006.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-006.mov"; path = "SVVag/movie-006.mov"; sourceTree = "<group>"; };
+		C9AB52C41723876500FF9BF4 /* movie-008.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-008.mov"; path = "SVVag/movie-008.mov"; sourceTree = "<group>"; };
+		C9AB52C51723876500FF9BF4 /* movie-009.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-009.mov"; path = "SVVag/movie-009.mov"; sourceTree = "<group>"; };
+		C9AB52C61723876500FF9BF4 /* movie-011.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-011.mov"; path = "SVVag/movie-011.mov"; sourceTree = "<group>"; };
+		C9AB52D0172389A800FF9BF4 /* movie-007.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-007.mov"; path = "SVVag/movie-007.mov"; sourceTree = "<group>"; };
+		C9AB52D2172389B300FF9BF4 /* movie-010.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-010.mov"; path = "SVVag/movie-010.mov"; sourceTree = "<group>"; };
+		C9AB52D3172389B300FF9BF4 /* movie-012.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-012.mov"; path = "SVVag/movie-012.mov"; sourceTree = "<group>"; };
+		C9AB52D4172389B300FF9BF4 /* movie-013.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "movie-013.mov"; path = "SVVag/movie-013.mov"; sourceTree = "<group>"; };
+		C9DAEAE8171C4EEC00C40C3A /* saturday-night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "saturday-night.jpg"; path = "../../../Desktop/saturday-night.jpg"; sourceTree = "<group>"; };
+		C9E7E10E173989930041E9BD /* pulse.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pulse.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C9EB0EC21720E42300C91D97 /* svvimScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svvimScene.cpp; sourceTree = "<group>"; };
+		C9EB0EC31720E42300C91D97 /* svvimScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svvimScene.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				0097E3E50F3E9819005A4392 /* QuickTime.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB0EC21720E42300C91D97 /* svvimScene.cpp */,
+				C95697BC1717A71A003D9E39 /* distortion.cpp */,
+				00BAE6590E7ED9C10018A608 /* svvimApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				0097E3E40F3E9819005A4392 /* QuickTime.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				53E3CDFB0E86099300238D2B /* Carbon.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* svvim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* svvim */ = {
+			isa = PBXGroup;
+			children = (
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = svvim;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C95697BD1717A71A003D9E39 /* distortion.h */,
+				32CA4F630368D1EE00C91783 /* svvim_Prefix.pch */,
+				C9EB0EC31720E42300C91D97 /* svvimScene.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C99358B61739CFEC005638DE /* SVVIM4_VIS_10.mov */,
+				C99358B71739CFEC005638DE /* SVVIM4_VIS_11.mov */,
+				C99358B41739CFDF005638DE /* SVVIM4_VIS_08.mov */,
+				C99358B21739CFA5005638DE /* SVVIM4_VIS_07.mov */,
+				C99358B01739C777005638DE /* swim-bw-logo-3.png */,
+				C99358AE1739B695005638DE /* bgMarble.png */,
+				C99358AC1739AB80005638DE /* SVVIM4_VIS_04.mov */,
+				C98962741739474700AD53C8 /* swim-bw-logo-2.png */,
+				C98962721738CBB800AD53C8 /* swim-bw-logo.png */,
+				C9AB52BF1723876500FF9BF4 /* movie-002.mov */,
+				C9AB52C01723876500FF9BF4 /* movie-003.mov */,
+				C9AB52C11723876500FF9BF4 /* movie-004.mov */,
+				C9AB52C21723876500FF9BF4 /* movie-005.mov */,
+				C9AB52C31723876500FF9BF4 /* movie-006.mov */,
+				C9AB52D0172389A800FF9BF4 /* movie-007.mov */,
+				C9AB52C41723876500FF9BF4 /* movie-008.mov */,
+				C9AB52C51723876500FF9BF4 /* movie-009.mov */,
+				C9AB52D2172389B300FF9BF4 /* movie-010.mov */,
+				C9AB52C61723876500FF9BF4 /* movie-011.mov */,
+				C9AB52D3172389B300FF9BF4 /* movie-012.mov */,
+				C9AB52D4172389B300FF9BF4 /* movie-013.mov */,
+				C9DAEAE8171C4EEC00C40C3A /* saturday-night.jpg */,
+				C95697BF1717B759003D9E39 /* water-over.m4v */,
+				C95697C01717B759003D9E39 /* water-under.m4v */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				00CCAF14116A9FEE008396D5 /* CinderApp.icns */,
+				C98A5ED3171BC8790024F9FF /* nothing.glsl */,
+				C98A5ED5171BC9810024F9FF /* pass-through.glsl */,
+				C98962701738C51B00AD53C8 /* yea.glsl */,
+				C9E7E10E173989930041E9BD /* pulse.frag */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* svvim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "svvim" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = svvim;
+			productInstallPath = "$(HOME)/Applications";
+			productName = svvim;
+			productReference = 8D1107320486CEB800E47090 /* svvim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "svvim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* svvim */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* svvim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */,
+				C95697C11717B759003D9E39 /* water-over.m4v in Resources */,
+				C95697C21717B759003D9E39 /* water-under.m4v in Resources */,
+				C98A5ED4171BC8790024F9FF /* nothing.glsl in Resources */,
+				C98A5ED6171BC9810024F9FF /* pass-through.glsl in Resources */,
+				C9DAEAE9171C4EEC00C40C3A /* saturday-night.jpg in Resources */,
+				C9AB52C81723876500FF9BF4 /* movie-002.mov in Resources */,
+				C9AB52C91723876500FF9BF4 /* movie-003.mov in Resources */,
+				C9AB52CA1723876500FF9BF4 /* movie-004.mov in Resources */,
+				C9AB52CB1723876500FF9BF4 /* movie-005.mov in Resources */,
+				C9AB52CC1723876500FF9BF4 /* movie-006.mov in Resources */,
+				C9AB52CD1723876500FF9BF4 /* movie-008.mov in Resources */,
+				C9AB52CE1723876500FF9BF4 /* movie-009.mov in Resources */,
+				C9AB52CF1723876500FF9BF4 /* movie-011.mov in Resources */,
+				C9AB52D1172389A800FF9BF4 /* movie-007.mov in Resources */,
+				C9AB52D5172389B300FF9BF4 /* movie-010.mov in Resources */,
+				C9AB52D6172389B300FF9BF4 /* movie-012.mov in Resources */,
+				C9AB52D7172389B300FF9BF4 /* movie-013.mov in Resources */,
+				C98962711738C51B00AD53C8 /* yea.glsl in Resources */,
+				C98962731738CBB800AD53C8 /* swim-bw-logo.png in Resources */,
+				C98962751739474800AD53C8 /* swim-bw-logo-2.png in Resources */,
+				C99358AD1739AB80005638DE /* SVVIM4_VIS_04.mov in Resources */,
+				C99358AF1739B695005638DE /* bgMarble.png in Resources */,
+				C99358B11739C777005638DE /* swim-bw-logo-3.png in Resources */,
+				C99358B31739CFA5005638DE /* SVVIM4_VIS_07.mov in Resources */,
+				C99358B51739CFDF005638DE /* SVVIM4_VIS_08.mov in Resources */,
+				C99358B81739CFEC005638DE /* SVVIM4_VIS_10.mov in Resources */,
+				C99358B91739CFEC005638DE /* SVVIM4_VIS_11.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BAE65A0E7ED9C10018A608 /* svvimApp.cpp in Sources */,
+				C95697BE1717A71A003D9E39 /* distortion.cpp in Sources */,
+				C9EB0EC41720E42300C91D97 /* svvimScene.cpp in Sources */,
+				C9E7E10F173989930041E9BD /* pulse.frag in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = svvim_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					"-lcurl",
+				);
+				PRODUCT_NAME = svvim;
+				SDKROOT = macosx;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = svvim_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					"-lcurl",
+				);
+				PRODUCT_NAME = svvim;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../libs/cinder_0.8.4;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../libs/cinder_0.8.4;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "svvim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "svvim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
